@@ -7,4 +7,4 @@ sudo systemctl stop transmission-daemon
 message info "Configuring transmission-daemon..."
 sudo cp -r ./$DIR/configs/settings.json /etc/transmission-daemon/settings.json
 sudo chown debian-transmission:debian-transmission /etc/transmission-daemon/settings.json
-sudo systemctl start transmission-daemon -y
+sudo systemctl start transmission-daemon
