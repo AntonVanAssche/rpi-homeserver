@@ -1,6 +1,6 @@
 # Raspberry Pi homeserver
 
-This repository contains the scripts that I use to setup my homeserver on a Raspberry Pi 4.
+This repository contains the scripts and configuration files that I use to turn my Raspberry pi 4 into a home/media-server.
 
 ## Requirements
 
