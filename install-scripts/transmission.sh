@@ -1,7 +1,7 @@
 #!/bin/bash
 
 message info "Installing transmission-daemon..."
-sudo apt install transmission-daemon
+sudo apt install transmission-daemon -y
 sudo systemctl stop transmission-daemon
 
 message info "Configuring transmission-daemon..."
