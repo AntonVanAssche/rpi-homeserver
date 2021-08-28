@@ -28,6 +28,7 @@ $ ./install.sh
 | [Vim](https://github.com/vim/vim) | Text editor |
 | [Pihole](https://github.com/pi-hole/pi-hole) | DNS level ad blocking software |
 | [Pivpn](https://github.com/pivpn/pivpn) | Vpn for Raspberry Pi |
+| [Emby](https://emby.media/) | Your personal media on any device |
 
 ## Configurations
 
