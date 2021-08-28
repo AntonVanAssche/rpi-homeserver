@@ -3,6 +3,17 @@
 # Abort if error.
 set -e
 
+DIR="$HOME/rpi-homeserver"
+
+DATE=$(date +"%d-%m-%Y")
+TIME=$(date +"%T")
+
+LOG_DIR="$DOTFILES/log"
+LOG_FILE="$LOG_DIR/$DATE-$TIME.log"
+
+# Create the LOG_DIR if no exists.
+mkdir -p $LOG_DIR
+
 cd $HOME
 
 source ./install-scripts/utils.sh
@@ -32,4 +43,4 @@ source ./install-scripts/pivpn.sh
 
 }
 
-MAIN 
+main | tee -a "$LOG_FILE"
