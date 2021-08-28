@@ -38,4 +38,4 @@ The following will be configured after running these scripts:
 
 ## Feedback
 
-These scripts aren't perfect therefore suggestions/improvements are always [welcome](https://gitlab.com/sudo_TuX/rpi-nas/-/issues)!
+These scripts aren't perfect therefore suggestions/improvements are always [welcome](https://github.com/TuX-sudo/rpi-homeserver/issues)!
