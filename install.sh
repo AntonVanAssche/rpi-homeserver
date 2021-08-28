@@ -27,19 +27,19 @@ read -t10
 
 ASK_FOR_SUDO
 
-source ./rpi-homeserver/install-scripts/packages.sh
+source ./$DIR/install-scripts/packages.sh
 
-source ./rpi-homeserver/install-scripts/network.sh
+source ./$DIR/install-scripts/network.sh
 
-source ./rpi-homeserver/install-scripts/emby.sh
+source ./$DIR/install-scripts/emby.sh
 
-source ./rpi-homeserver/install-scripts/grafana.sh
+source ./$DIR/install-scripts/grafana.sh
 
-source ./rpi-homeserver/install-scripts/transmission.sh
+source ./$DIR/install-scripts/transmission.sh
 
-source ./rpi-homeserver/install-scripts/pihole.sh
+source ./$DIR/install-scripts/pihole.sh
 
-source ./rpi-homeserver/install-scripts/pivpn.sh
+source ./$DIR/install-scripts/pivpn.sh
 
 }
 
