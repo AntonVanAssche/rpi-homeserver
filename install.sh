@@ -16,7 +16,7 @@ mkdir -p $LOG_DIR
 
 cd $HOME
 
-source ./install-scripts/utils.sh
+source ./rpi-homeserver/install-scripts/utils.sh
 
 OS_CHECK
 
@@ -27,19 +27,19 @@ read -t10
 
 ASK_FOR_SUDO
 
-source ./install-scripts/packages.sh
+source ./rpi-homeserver/install-scripts/packages.sh
 
-source ./install-scripts/network.sh
+source ./rpi-homeserver/install-scripts/network.sh
 
-source ./install-scripts/emby.sh
+source ./rpi-homeserver/install-scripts/emby.sh
 
-source ./install-scripts/grafana.sh
+source ./rpi-homeserver/install-scripts/grafana.sh
 
-source ./install-scripts/transmission.sh
+source ./rpi-homeserver/install-scripts/transmission.sh
 
-source ./install-scripts/pihole.sh
+source ./rpi-homeserver/install-scripts/pihole.sh
 
-source ./install-scripts/pivpn.sh
+source ./rpi-homeserver/install-scripts/pivpn.sh
 
 }
 
