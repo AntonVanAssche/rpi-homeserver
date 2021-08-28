@@ -1,7 +1,3 @@
 #!/bin/bash
 
-# Download pivpn installer into rpi-nas/pivpn/index.html
-wget https://install.pivpn.io -P rpi-nas/pivpn/
-
-# Execute installer
-source ./rpi-nas/pivpn/index.html
+curl -L https://install.pivpn.io | bash
