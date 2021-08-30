@@ -16,7 +16,7 @@ tar -xvf node_exporter-"$NODE_EXPORTER_VERSION".linux-armv7.tar.gz
 
 rm -rf prometheus-"$PROMETHEUS_VERSION".linux-armv7.tar.gz node_exporter-"$NODE_EXPORTER_VERSION".linux-armv7.tar.gz
 
-sudo systemctl stop grafana-server prometeus.service node_exporter.service
+sudo systemctl stop grafana-server prometheus.service node_exporter.service
 
 sudo rm -rf /usr/sbin/prometeus /usr/sbin/node_exporter
 
@@ -26,10 +26,10 @@ sudo mv node_exporter-"$NODE_EXPORTER_VERSION".linux-armv7/ node_exporter/
 sudo mv prometheus/ /usr/sbin/
 sudo mv node_exporter/ /usr/sbin/
 
-sudo cp -r ./configs/prometeus.yml /usr/sbin/prometheus/
+sudo cp -r ./configs/prometheus.yml /usr/sbin/prometheus/
 
 sudo systemctl daemon-reload
-sudo systemctl start grafana-server prometeus.service node_exporter.service
-sudo systemctl status grafana-server prometeus.service node_exporter.service
+sudo systemctl start grafana-server prometheus.service node_exporter.service
+sudo systemctl status grafana-server prometheus.service node_exporter.service
 
 echo "All done"
