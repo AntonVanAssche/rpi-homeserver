@@ -29,13 +29,14 @@ $ ./install.sh
 | [Pihole](https://github.com/pi-hole/pi-hole) | DNS level ad blocking software |
 | [Pivpn](https://github.com/pivpn/pivpn) | Vpn for Raspberry Pi |
 | [Emby](https://emby.media/) | Your personal media on any device |
+| [Transmission-daemon](https://transmissionbt.com/) | Torrent client running as a daemon |
 
 ## Configurations
 
 The following will be configured after running these scripts:
-- Static IP
-- Firewall
-- Transmission-daemon settings
+- [Static IP](./install-scripts/network.sh)
+- [Firewall](./install-scripts/network.sh)
+- [Transmission-daemon settings](./install-scripts/transmission.sh)
 
 ## Feedback
 
