@@ -3,7 +3,7 @@
 # Abort if error.
 set -e
 
-dir="$HOME/rpi-homeserver"
+dir="$(pwd)"
 
 date=$(date +"%d-%m-%Y")
 time=$(date +"%T")
