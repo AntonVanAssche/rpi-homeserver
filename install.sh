@@ -3,44 +3,44 @@
 # Abort if error.
 set -e
 
-DIR="$HOME/rpi-homeserver"
+dir="$HOME/rpi-homeserver"
 
-DATE=$(date +"%d-%m-%Y")
-TIME=$(date +"%T")
+date=$(date +"%d-%m-%Y")
+time=$(date +"%T")
 
-LOG_DIR="$DIR/log"
-LOG_FILE="$LOG_DIR/$DATE-$TIME.log"
+logDir="$dir/log"
+logFile="$logDir/$date-$time.log"
 
 # Create the LOG_DIR if no exists.
-mkdir -p $LOG_DIR
+mkdir -p $logDir
 
 cd $HOME
 
-source ./$DIR/install-scripts/utils.sh
+source ./$dir/install-scripts/utils.sh
 
-OS_CHECK
+osCheck
 
-function MAIN() {
+function main() {
 
    message quest "Press enter to begin installation (automatically install after 10s):"
    read -t10
 
-   ASK_FOR_SUDO
+   askForSudo
 
-   source ./$DIR/install-scripts/packages.sh
+   source $dir/install-scripts/packages.sh
 
-   source ./$DIR/install-scripts/network.sh
+   source $dir/install-scripts/network.sh
 
-   source ./$DIR/install-scripts/emby.sh
+   source $dir/install-scripts/emby.sh
 
-   source ./$DIR/install-scripts/grafana.sh
+   source $dir/install-scripts/grafana.sh
 
-   source ./$DIR/install-scripts/transmission.sh
+   source $dir/install-scripts/transmission.sh
 
-   source ./$DIR/install-scripts/pihole.sh
+   source $dir/install-scripts/pihole.sh
 
-   source ./$DIR/install-scripts/pivpn.sh
+   source $dir/install-scripts/pivpn.sh
 
 }
 
-main | tee -a "$LOG_FILE"
+main | tee -a "$logFile"

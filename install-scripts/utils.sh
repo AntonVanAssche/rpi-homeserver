@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function ASK_FOR_SUDO() {
+function askForSudo() {
 
     # Ask for the administrator password upfront.
 
@@ -48,7 +48,7 @@ function message() {
    esac
 }
 
-function OS_CHECK() {
+function osCheck() {
    # System checks
    OS="$(hostnamectl | grep "Operating System: " | sed -e "s/Operating System: //")"
 

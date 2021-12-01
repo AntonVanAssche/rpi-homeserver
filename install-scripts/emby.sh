@@ -1,8 +1,8 @@
 #!/bin/bash
 
-EMBY_VERSION="4.6.4.0"
+embyVersion="4.6.4.0"
 
 message info "Installing emby-server..."
-wget https://github.com/MediaBrowser/Emby.Releases/releases/download/"$EMBY_VERSION"/emby-server-deb_"$EMBY_VERSION"_armhf.deb
-sudo apt install ./emby-server-deb_"$EMBY_VERSION"_armhf.deb -y
-rm -rf ./emby-server-deb_"$EMBY_VERSION"_armhf.deb
+wget https://github.com/MediaBrowser/Emby.Releases/releases/download/"$embyVersion"/emby-server-deb_"$embyVersion"_armhf.deb
+sudo apt install ./emby-server-deb_"$embyVersion"_armhf.deb -y
+rm -rf ./emby-server-deb_"$embyVersion"_armhf.deb
