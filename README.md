@@ -14,7 +14,7 @@ The following hardware is **required** to use these scripts:
 **Warning DO NOT run the `install.sh` script if you do not fully understand what it does. Seriously, DON'T!**
 
 ```bash
-$ git clone https://github.com/TuX-sudo/rpi-homeserver.git
+$ git clone https://github.com/AntonVanAssche/rpi-homeserver.git
 $ cd rpi-homeserver/
 $ ./install.sh
 ```
@@ -42,7 +42,7 @@ The following will be configured after running these scripts:
 
 ## Feedback
 
-These scripts aren't perfect therefore suggestions/improvements are always [welcome](https://github.com/TuX-sudo/rpi-homeserver/issues)!
+These scripts aren't perfect therefore suggestions/improvements are always [welcome](https://github.com/AntonVanAssche/rpi-homeserver/issues)!
 
 ## License
 
