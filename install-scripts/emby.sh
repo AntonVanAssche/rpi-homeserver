@@ -1,6 +1,6 @@
 #!/bin/bash
 
-embyVersion="4.6.4.0"
+embyVersion="4.6.7.0"
 
 message info "Installing emby-server..."
 wget https://github.com/MediaBrowser/Emby.Releases/releases/download/"$embyVersion"/emby-server-deb_"$embyVersion"_armhf.deb
