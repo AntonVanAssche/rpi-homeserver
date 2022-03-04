@@ -16,7 +16,7 @@ mkdir -p $logDir
 
 cd $HOME
 
-source ./$dir/install-scripts/utils.sh
+source $dir/install-scripts/utils.sh
 
 osCheck
 

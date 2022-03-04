@@ -7,8 +7,8 @@ nodeExporterVersion="1.3.1"
 message info "Installing Grafana-server..."
 sudo apt-get install -y adduser libfontconfig1
 wget https://dl.grafana.com/enterprise/release/grafana-enterprise_"$grafanaVersion"_armhf.deb
-sudo dpkg -i grafana-enterprise_8.1.2_armhf.deb
-rm -rf grafana-enterprise_8.1.2_armhf.deb
+sudo dpkg -i ./grafana-enterprise_"$grafanaVersion"_armhf.deb
+rm -rf ./grafana-enterprise_"$grafanaVersion"_armhf.deb
 
 message info "Installing Prometheus & node-exporter..."
 wget https://github.com/prometheus/prometheus/releases/download/v"$prometheusVersion"/prometheus-"$prometheusVersion".linux-armv7.tar.gz
@@ -27,9 +27,9 @@ sudo mv node_exporter-"$nodeExporterVersion".linux-armv7/ node_exporter/
 sudo mv prometheus/ /usr/sbin/
 sudo mv node_exporter/ /usr/sbin/
 
-sudo cp -r ./$DIR/configs/prometheus.yml /usr/sbin/prometheus/
-sudo cp -r ./$DIR/services/prometheus.service /etc/systemd/system/prometheus.service
-sudo cp -r ./$DIR/services/node_exporter.service /etc/systemd/system/node_exporter.service
+sudo cp -r ./"$dir"/configs/prometheus.yml /usr/sbin/prometheus/
+sudo cp -r ./"$dir"/services/prometheus.service /etc/systemd/system/prometheus.service
+sudo cp -r ./"$dir"/services/node_exporter.service /etc/systemd/system/node_exporter.service
 
 sudo chown -R root:root /usr/sbin/prometheus/ /usr/sbin/node_exporter/ /etc/systemd/system/prometheus.service /etc/systemd/system/node_exporter.service
 
